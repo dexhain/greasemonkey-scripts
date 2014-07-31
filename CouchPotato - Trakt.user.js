@@ -1,6 +1,8 @@
 // ==UserScript==
 // @name        CouchPotato - Trakt
 // @namespace   https://github.com/dexhain/greasemonkey-scripts
+// @include	entercouchaddress
+// @downloadURL https://github.com/dexhain/greasemonkey-scripts/raw/master/CouchPotato%20-%20Trakt.user.js
 // @version     1.0
 // @grant       GM_xmlhttpRequest
 // @grant		GM_addStyle
