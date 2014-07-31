@@ -8,13 +8,14 @@
 // @grant		GM_addStyle
 // @grant		GM_setValue
 // @grant		GM_getValue
+// @grant		GM_deleteValue
 // ==/UserScript==
 
 if(window.top == window.self)
 {
-	if(GM_getValue("apikey", "") === "")
+	if(GM_getValue("apikey", "") === "" || GM_getValue("apikey", "") == null || GM_getValue("apikey", "").length == 0)
 		GM_setValue("apikey", prompt("Enter your apikey"));
-	if(GM_getValue("username", "") === "")
+	if(GM_getValue("username", "") === "" || GM_getValue("username", "") == null || GM_getValue("username", "").length == 0)
 		GM_setValue("username", prompt("Enter your username"));
 	GM_addStyle("\
 		.watchlist {\
